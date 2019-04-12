@@ -11,10 +11,10 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 
-#Returns x(n+1)
+#The main function that intakes x(n) and a, and returns x(n+1)
 def expanding_seq(x,a):
-    x_ = a*x*(1-x)
-    return x_
+    x_1 = a*x*(1-x)
+    return x_1
 
 
 #Question 1:
@@ -29,6 +29,8 @@ def convergent_point(a,x_init,n):
 
 temp = [convergent_point(1.,random.random(),100)]
 print (temp)
+
+
 #Question 2
 #An array that saves all recorded values of (a) and (converging x)
 an_array = []
@@ -37,7 +39,6 @@ del temp
 
 #Question 3 
  
-
 #Function intakes a, x_init_size and n
 #returns list consist of elements (a,x_), where x* is convergence point
 def convergent_point_list(a,x_init_size,n): 
