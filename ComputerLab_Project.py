@@ -48,8 +48,6 @@ def convergent_point_list(a,x_init_size,n):
         x_conv_list.append(convergent_point(a,x_init,n))
     return x_conv_list
 
-a_NumPy_array = np.array(convergent_point_list(1,50,100))
-
 #Question 4
 
 temp = []
@@ -57,12 +55,10 @@ temp = []
 for a in sorted((np.random.sample(2000)*2.5+1.5).tolist()):
     #a temporary variable is used to collect the data list
     temp += convergent_point_list(a,50,100)
-another_NumPy_array = np.array(temp)
 del temp
 #print (another_NumPy_array[:50])
 
 #Question 5:
 
-plt.scatter(another_NumPy_array[:,0],another_NumPy_array[:,1])
-plt.show()
+
             
