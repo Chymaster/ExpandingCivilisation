@@ -26,9 +26,8 @@ def convergent_point(a,x_init,n):
     for i in range(n):
         x = expanding_seq(x,a)
     return [a,x]
-
-temp = [convergent_point(1.,random.random(),100)]
-print (temp)
+#temp to be found by function convergent_point(a,x_init,n)
+#print (temp)
 
 
 #Question 2
