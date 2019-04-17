@@ -27,14 +27,13 @@ def convergent_point(a,x_init,n):
         x = expanding_seq(x,a)
     return [a,x]
 #temp to be found by function convergent_point(a,x_init,n)
-#print (temp)
+
 
 
 #Question 2
 #An array that saves all recorded values of (a) and (converging x)
 an_array = []
-an_array.append(temp)
-del temp
+
 
 #Question 3 
  
