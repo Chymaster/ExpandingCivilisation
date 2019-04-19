@@ -49,8 +49,8 @@ def convergent_point_list(a,x_init_size,n):
 #Question 4
 
 temp = []
-#the line gives a random sample size of 2000 in the interval [1.5,4] in numerical order
-for a in sorted((np.random.sample(2000)*2.5+1.5).tolist()):
+#the line gives a spanning sample size of 2000 in the interval [1.5,4] in numerical order
+for a in (np.linspace(a_range[0],a_range[1],num=N)).tolist():
     #a temporary variable is used to collect the data list
     temp += convergent_point_list(a,50,100)
 del temp
